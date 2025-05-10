@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - YUFI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="assets/favicon.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="assets/logo.png" alt="YUFI Logo" class="nav-logo">
+        </div>
+        <div class="nav-right">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#courses">Courses</a>
+            <a href="index.html#teachers">Teachers</a>
+            <a href="blog.html">Blog</a>
+            <a href="index.html#contact">Contact</a>
+            <button class="register-btn">Register Now</button>
+        </div>
+    </nav>
+
+    <!-- Blog Content -->
+    <div class="blog-container">
+        <!-- Side Navigation -->
+        <aside class="blog-sidebar">
+            <div class="search-box">
+                <input type="text" placeholder="Search articles...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="categories">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#" data-category="all">All Articles</a></li>
+                    <li><a href="#" data-category="technology">Technology</a></li>
+                    <li><a href="#" data-category="education">Education</a></li>
+                    <li><a href="#" data-category="innovation">Innovation</a></li>
+                    <li><a href="#" data-category="career">Career Development</a></li>
+                </ul>
+            </div>
+            <div class="popular-posts">
+                <h3>Popular Posts</h3>
+                <ul>
+                    <li><a href="#">The Future of Online Education</a></li>
+                    <li><a href="#">Top Programming Languages to Learn in 2024</a></li>
+                    <li><a href="#">How to Build a Successful Tech Career</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="blog-content">
+            <h1>Latest Articles</h1>
+            <div class="articles-grid" id="articles-container">
+                <!-- Articles will be dynamically loaded here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <h3>Navigation</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#courses">Courses</a>
+                <a href="#teachers">Teachers</a>
+                <a href="blog.html">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-links">
+                <h3>Important Links</h3>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: info@yufi.com</p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Developed by <a href="https://dasun-anupiya.github.io/crypsystechnologies/" target="_blank">CRYPSYS</a></p>
+        </div>
+    </footer>
+
+    <!-- Chat Button -->
+    <button id="chat-button" class="chat-button">
+        <i class="fas fa-comments"></i>
+    </button>
+    <div id="chat-window" class="chat-window">
+        <div class="chat-header">
+            <h3>Chat with us</h3>
+            <button class="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-messages">
+            <!-- Chat messages will be dynamically added -->
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type your message...">
+            <button><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html> 
